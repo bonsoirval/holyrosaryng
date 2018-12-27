@@ -1,0 +1,13 @@
+ validate phone number, email and pin(must be active)
+
+
+
+user type
+nursing
+medlab
+midwife with respective login url
+admin does user login refresh
+add pin input for registrations
+
+Test Used and Reused PIN
+(4, 1807861108, 237975567018, 'used', '2017-02-22 12:20:14', 19),

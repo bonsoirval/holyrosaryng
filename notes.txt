@@ -1,0 +1,2 @@
+NOTES
+For umsci_pin table, check date_used column for on update fuction

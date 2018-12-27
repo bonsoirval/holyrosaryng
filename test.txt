@@ -1,0 +1,1151 @@
+<div class="well">
+    <div class="tab-content">
+
+        <div class="tab-pane fade active in" id="tab1">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h1>Profile Final Preview</h1>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/preview/" data-parsley-validate="" class="form-horizontal form-label-left">
+                                                                        <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Gender: <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input name="surname" value="female" readonly="readonly" id="surname" class="form-control" type="text">
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Of Birth<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input name="othernames" readonly="readonly" id="othernames" class="form-control" type="text">
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="town_of_birth">Place of Birth<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                         <input name="birth_town" readonly="readonly" id="birth_town" placeholder="dd/mm/yyyy" class="form-control" type="birth_town">
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="town_of_birth">LGA Of Origin<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                         <input name="birth_town" readonly="readonly" id="birth_town" placeholder="dd/mm/yyyy" class="form-control" type="birth_town">
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="town_of_birth">State Of Origin<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                         <input value="Andaman and Nicobar Islands" readonly="readonly" class="form-control" type="text">
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="town_of_birth">Country Of Origin<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                         <input value="Afghanistan" readonly="readonly" class="form-control" type="text">
+
+                                    </div>
+                                </div>
+                                </form>
+                        </div>
+                    </div>
+
+
+    <!-- /page content -->
+
+
+<div id="custom_notifications" class="custom-notifications dsp_none">
+<ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+</ul>
+<div class="clearfix"></div>
+<div id="notif-group" class="tabbed_notifications"></div>
+</div>
+    <div class="clearfix"></div>
+
+        </div>
+    <!-- passport upload section start-->
+
+        <div class="tab-pane fade" id="contact">
+             <div class="tab-pane fade in active" id="tab1">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h1>Contact Final Preview</h1>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/profile" data-parsley-validate="" class="form-horizontal form-label-left">
+                                                                        <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Contact Address <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <textarea cols="5" rows="5" readonly="readonly" type="text" value="" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Permanent Address<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <textarea cols="5" rows="5" readonly="readonly" value="" type="text" id="othernames" class="form-control"></textarea>
+
+                                    </div>
+                                </div>
+
+                                </form>
+                        </div>
+                    </div>
+
+
+    <!-- /page content -->
+
+
+<div id="custom_notifications" class="custom-notifications dsp_none">
+<ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+</ul>
+<div class="clearfix"></div>
+<div id="notif-group" class="tabbed_notifications"></div>
+</div>
+    <div class="clearfix"></div>
+
+        </div>
+
+        </div>
+
+
+
+        <div class="tab-pane fade" id="next_of_kin">
+             <div class="tab-pane fade in active" id="tab1">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h1>Next of Kin Final Preview</h1>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/profile" data-parsley-validate="" class="form-horizontal form-label-left">
+                                                                        <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Next of Kin Name <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input readonly="readonly" id="surname" class="form-control" type="text">
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Next of Kin Address<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input readonly="readonly" id="othernames" class="form-control" type="text">
+
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="town_of_birth">Next of Kin Phone<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                         <input readonly="readonly" id="birth_town" placeholder="Enter Town of Birth" class="form-control" type="birth_town">
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="town_of_birth">Next of Kin Relationship<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                         <input readonly="readonly" id="birth_town" placeholder="Enter Town of Birth" class="form-control" type="birth_town">
+
+                                    </div>
+                                </div>
+
+                                </form>
+                        </div>
+                    </div>
+
+
+    <!-- /page content -->
+
+
+<div id="custom_notifications" class="custom-notifications dsp_none">
+<ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+</ul>
+<div class="clearfix"></div>
+<div id="notif-group" class="tabbed_notifications"></div>
+</div>
+    <div class="clearfix"></div>
+
+        </div>
+
+        </div>
+
+
+
+
+    <div class="tab-pane fade" id="olevel1">
+             <div class="tab-pane fade in active" id="tab1">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h1>Olevel Final Preview</h1>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/profile" data-parsley-validate="" class="form-horizontal form-label-left">
+                                    <table class="table table-bordered">
+                                 <thead>
+                                   <tr>
+                                     <th></th>
+                                     <th>FIRST SITTING GRADE</th>
+                                     <th>SECOND SITTING GRADE</th>
+
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                 <tr>
+                                   <td>Examination</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                </tr>
+                                 <tr>
+                                   <td>Examination Number</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Examination Year</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                 </tr>
+                                 <tr>
+                                   <td>English Language</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Mathematics</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Physics</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Chemistry</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Biology</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                 </tr>
+                                 </tbody>
+                               </table>
+                            </form>
+                        </div>
+                    </div>
+
+
+    <!-- /page content -->
+
+
+<div id="custom_notifications" class="custom-notifications dsp_none">
+<ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+</ul>
+<div class="clearfix"></div>
+<div id="notif-group" class="tabbed_notifications"></div>
+</div>
+    <div class="clearfix"></div>
+
+        </div>
+
+        </div>
+
+    <div class="tab-pane fade in" id="employment">
+             <div class="tab-pane fade in active" id="tab1">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h1>Empployment Final Preview</h1>
+                                <div class="clearfix"></div>
+                            </div>
+
+                              <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/profile" data-parsley-validate="" class="form-horizontal form-label-left">
+                                    <table class="table table-bordered">
+                                 <thead>
+                                   <tr>
+                                     <th>EMPLOYER</th>
+                                     <th>ADDRESS</th>
+                                     <th>POSITION HELD</th>
+                                     <th>PHONE</th>
+
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                 <tr>
+                                   <td>0</td>
+                                   <td></td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                </tr>
+
+                                 </tbody>
+                               </table>
+                            </form>
+                        </div>
+                    </div>
+
+
+    <!-- /page content -->
+
+
+<div id="custom_notifications" class="custom-notifications dsp_none">
+<ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+</ul>
+<div class="clearfix"></div>
+<div id="notif-group" class="tabbed_notifications"></div>
+</div>
+    <div class="clearfix"></div>
+
+        </div>
+
+        </div>
+    <div class="tab-pane fade in" id="professional">
+             <div class="tab-pane fade in active" id="tab1">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h1>Professional Final Preview</h1>
+                                <div class="clearfix"></div>
+                            </div>
+
+                              <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/profile" data-parsley-validate="" class="form-horizontal form-label-left">
+                                    <table class="table table-bordered">
+                                 <thead>
+                                   <tr>
+                                     <th>SCHOOL</th>
+                                     <th>YEAR</th>
+                                     <th>QUALIFICATION</th>
+
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                 <tr>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                                </tr>
+                                 <tr>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                                </tr>
+                                 <tr>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                                </tr>
+                                 <tr>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                                </tr>
+
+                                 </tbody>
+                               </table>
+                            </form>
+                        </div>
+                    </div>
+
+
+    <!-- /page content -->
+
+
+<div id="custom_notifications" class="custom-notifications dsp_none">
+<ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+</ul>
+<div class="clearfix"></div>
+<div id="notif-group" class="tabbed_notifications"></div>
+</div>
+    <div class="clearfix"></div>
+
+        </div>
+
+        </div>
+    <a href="http://www.holyrosaryng.net/Candidate/submit" class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Final Submission</a>
+<!-- daterangepicker -->
+<script type="text/javascript" src="1_files/moment.js"></script>
+<script type="text/javascript" src="1_files/daterangepicker.js"></script>
+<script type="text/javascript" src="1_files/date.js"></script>
+
+
+<script type="text/javascript" lang="javascript">
+
+$(document).ready(function(){
+    $('#dob').daterangepicker({
+        singleDatePicker: true,
+        calender_style: "picker_4"
+    }, function (start, end, label) {
+        console.log(start.toISOString(), end.toISOString(), label);
+    });
+
+
+    /*image preview start*/
+    $("#imgInp").change(function(){
+        readURL(this);
+    });
+
+    /*image preview end*/
+});
+
+
+ function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#passport')
+                .attr('src', e.target.result)
+                .width(150)
+                .height(200);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+
+<!-- datepicker -->
+<script type="text/javascript">
+$(document).ready(function () {
+
+    var cb = function (start, end, label) {
+        console.log(start.toISOString(), end.toISOString(), label);
+        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        //alert("Callback has fired: [" + start.format('MMMM D, YYYY') + " to " + end.format('MMMM D, YYYY') + ", label = " + label + "]");
+    }
+
+    var optionSet1 = {
+        startDate: moment().subtract(29, 'days'),
+        endDate: moment(),
+        minDate: '01/01/2012',
+        maxDate: '12/31/2015',
+        dateLimit: {
+            days: 60
+        },
+        showDropdowns: true,
+        showWeekNumbers: true,
+        timePicker: false,
+        timePickerIncrement: 1,
+        timePicker12Hour: true,
+        ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        },
+        opens: 'left',
+        buttonClasses: ['btn btn-default'],
+        applyClass: 'btn-small btn-primary',
+        cancelClass: 'btn-small',
+        format: 'MM/DD/YYYY',
+        separator: ' to ',
+        locale: {
+            applyLabel: 'Submit',
+            cancelLabel: 'Clear',
+            fromLabel: 'From',
+            toLabel: 'To',
+            customRangeLabel: 'Custom',
+            daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+            monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+            firstDay: 1
+        }
+    };
+    $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+    $('#reportrange').daterangepicker(optionSet1, cb);
+    $('#reportrange').on('show.daterangepicker', function () {
+        console.log("show event fired");
+    });
+    $('#reportrange').on('hide.daterangepicker', function () {
+        console.log("hide event fired");
+    });
+    $('#reportrange').on('apply.daterangepicker', function (ev, picker) {
+        console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
+    });
+    $('#reportrange').on('cancel.daterangepicker', function (ev, picker) {
+        console.log("cancel event fired");
+    });
+    $('#options1').click(function () {
+        $('#reportrange').data('daterangepicker').setOptions(optionSet1, cb);
+    });
+    $('#options2').click(function () {
+        $('#reportrange').data('daterangepicker').setOptions(optionSet2, cb);
+    });
+    $('#destroy').click(function () {
+        $('#reportrange').data('daterangepicker').remove();
+    });
+});
+</script>
+<script type="text/javascript" lang="javascript">
+
+$(document).ready(function () {
+
+    //alert("Hi");
+    ajax_nationality();
+    //ajax_states();
+
+    $("select#nationality").change(function(){
+          ajax_states();
+      });
+
+    $("select#origin_state").change(function(){
+          //alert("hi"); //
+          ajax_cities();
+      });
+});
+
+function ajax_nationality() {
+
+  //$('.show-veg').click(function () {
+  //alert("Countries");
+    $.ajax({
+      url: "http://www.holyrosaryng.net/Candidate/nationality",
+      async: false,
+      type: "POST",
+      //data: {},
+      dataType: "html",
+      success: function(data) {
+         // alert(data);
+        $('#nationality').html(data);
+      }
+    })
+  //});
+
+}
+
+function ajax_states() {
+    var country_id = $("#nationality").val();
+    //$()
+    $.ajax({
+      url: "http://www.holyrosaryng.net/Candidate/state",
+      //async: false,
+      type: "POST",
+      data:
+        {
+            'country_id':country_id,
+        },
+    ContentType: "application/json",
+
+     // dataType: "html",
+      success: function(data) {
+         // alert(data);
+        $('#origin_state').html(data);
+      }
+    })
+  //});
+
+}
+</script>
+
+
+
+    <!-- /page content -->
+
+</div>
+
+
+
+
+
+<div class="well">
+    <div class="tab-content">
+
+        <div class="tab-pane fade active in" id="tab1">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h1>Profile Final Preview</h1>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/preview/" data-parsley-validate="" class="form-horizontal form-label-left">
+                                                                        <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Gender: <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input name="surname" value="female" readonly="readonly" id="surname" class="form-control" type="text">
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Of Birth<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input name="othernames" readonly="readonly" id="othernames" class="form-control" type="text">
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="town_of_birth">Place of Birth<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                         <input name="birth_town" readonly="readonly" id="birth_town" placeholder="dd/mm/yyyy" class="form-control" type="birth_town">
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="town_of_birth">LGA Of Origin<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                         <input name="birth_town" readonly="readonly" id="birth_town" placeholder="dd/mm/yyyy" class="form-control" type="birth_town">
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="town_of_birth">State Of Origin<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                         <input value="Andaman and Nicobar Islands" readonly="readonly" class="form-control" type="text">
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="town_of_birth">Country Of Origin<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                         <input value="Afghanistan" readonly="readonly" class="form-control" type="text">
+
+                                    </div>
+                                </div>
+                                </form>
+                        </div>
+                    </div>
+
+
+    <!-- /page content -->
+
+
+<div id="custom_notifications" class="custom-notifications dsp_none">
+<ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+</ul>
+<div class="clearfix"></div>
+<div id="notif-group" class="tabbed_notifications"></div>
+</div>
+    <div class="clearfix"></div>
+
+        </div>
+    <!-- passport upload section start-->
+
+        <div class="tab-pane fade" id="contact">
+             <div class="tab-pane fade in active" id="tab1">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h1>Contact Final Preview</h1>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/profile" data-parsley-validate="" class="form-horizontal form-label-left">
+                                                                        <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Contact Address <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <textarea cols="5" rows="5" readonly="readonly" type="text" value="" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Permanent Address<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <textarea cols="5" rows="5" readonly="readonly" value="" type="text" id="othernames" class="form-control"></textarea>
+
+                                    </div>
+                                </div>
+
+                                </form>
+                        </div>
+                    </div>
+
+
+    <!-- /page content -->
+
+
+<div id="custom_notifications" class="custom-notifications dsp_none">
+<ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+</ul>
+<div class="clearfix"></div>
+<div id="notif-group" class="tabbed_notifications"></div>
+</div>
+    <div class="clearfix"></div>
+
+        </div>
+
+        </div>
+
+
+
+        <div class="tab-pane fade" id="next_of_kin">
+             <div class="tab-pane fade in active" id="tab1">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h1>Next of Kin Final Preview</h1>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/profile" data-parsley-validate="" class="form-horizontal form-label-left">
+                                                                        <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Next of Kin Name <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input readonly="readonly" id="surname" class="form-control" type="text">
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Next of Kin Address<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input readonly="readonly" id="othernames" class="form-control" type="text">
+
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="town_of_birth">Next of Kin Phone<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                         <input readonly="readonly" id="birth_town" placeholder="Enter Town of Birth" class="form-control" type="birth_town">
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="town_of_birth">Next of Kin Relationship<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                         <input readonly="readonly" id="birth_town" placeholder="Enter Town of Birth" class="form-control" type="birth_town">
+
+                                    </div>
+                                </div>
+
+                                </form>
+                        </div>
+                    </div>
+
+
+    <!-- /page content -->
+
+
+<div id="custom_notifications" class="custom-notifications dsp_none">
+<ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+</ul>
+<div class="clearfix"></div>
+<div id="notif-group" class="tabbed_notifications"></div>
+</div>
+    <div class="clearfix"></div>
+
+        </div>
+
+        </div>
+
+
+
+
+    <div class="tab-pane fade" id="olevel1">
+             <div class="tab-pane fade in active" id="tab1">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h1>Olevel Final Preview</h1>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/profile" data-parsley-validate="" class="form-horizontal form-label-left">
+                                    <table class="table table-bordered">
+                                 <thead>
+                                   <tr>
+                                     <th></th>
+                                     <th>FIRST SITTING GRADE</th>
+                                     <th>SECOND SITTING GRADE</th>
+
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                 <tr>
+                                   <td>Examination</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                </tr>
+                                 <tr>
+                                   <td>Examination Number</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Examination Year</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                 </tr>
+                                 <tr>
+                                   <td>English Language</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Mathematics</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Physics</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Chemistry</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Biology</td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                 </tr>
+                                 </tbody>
+                               </table>
+                            </form>
+                        </div>
+                    </div>
+
+
+    <!-- /page content -->
+
+
+<div id="custom_notifications" class="custom-notifications dsp_none">
+<ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+</ul>
+<div class="clearfix"></div>
+<div id="notif-group" class="tabbed_notifications"></div>
+</div>
+    <div class="clearfix"></div>
+
+        </div>
+
+        </div>
+
+    <div class="tab-pane fade in" id="employment">
+             <div class="tab-pane fade in active" id="tab1">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h1>Empployment Final Preview</h1>
+                                <div class="clearfix"></div>
+                            </div>
+
+                              <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/profile" data-parsley-validate="" class="form-horizontal form-label-left">
+                                    <table class="table table-bordered">
+                                 <thead>
+                                   <tr>
+                                     <th>EMPLOYER</th>
+                                     <th>ADDRESS</th>
+                                     <th>POSITION HELD</th>
+                                     <th>PHONE</th>
+
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                 <tr>
+                                   <td>0</td>
+                                   <td></td>
+                                   <td>0</td>
+                                   <td>0</td>
+                                </tr>
+
+                                 </tbody>
+                               </table>
+                            </form>
+                        </div>
+                    </div>
+
+
+    <!-- /page content -->
+
+
+<div id="custom_notifications" class="custom-notifications dsp_none">
+<ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+</ul>
+<div class="clearfix"></div>
+<div id="notif-group" class="tabbed_notifications"></div>
+</div>
+    <div class="clearfix"></div>
+
+        </div>
+
+        </div>
+    <div class="tab-pane fade in" id="professional">
+             <div class="tab-pane fade in active" id="tab1">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h1>Professional Final Preview</h1>
+                                <div class="clearfix"></div>
+                            </div>
+
+                              <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/profile" data-parsley-validate="" class="form-horizontal form-label-left">
+                                    <table class="table table-bordered">
+                                 <thead>
+                                   <tr>
+                                     <th>SCHOOL</th>
+                                     <th>YEAR</th>
+                                     <th>QUALIFICATION</th>
+
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                 <tr>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                                </tr>
+                                 <tr>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                                </tr>
+                                 <tr>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                                </tr>
+                                 <tr>
+                                   <td></td>
+                                   <td></td>
+                                   <td></td>
+                                </tr>
+
+                                 </tbody>
+                               </table>
+                            </form>
+                        </div>
+                    </div>
+
+
+    <!-- /page content -->
+
+
+<div id="custom_notifications" class="custom-notifications dsp_none">
+<ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+</ul>
+<div class="clearfix"></div>
+<div id="notif-group" class="tabbed_notifications"></div>
+</div>
+    <div class="clearfix"></div>
+
+        </div>
+
+        </div>
+    <a href="http://www.holyrosaryng.net/Candidate/submit" class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Final Submission</a>
+<!-- daterangepicker -->
+<script type="text/javascript" src="1_files/moment.js"></script>
+<script type="text/javascript" src="1_files/daterangepicker.js"></script>
+<script type="text/javascript" src="1_files/date.js"></script>
+
+
+<script type="text/javascript" lang="javascript">
+
+$(document).ready(function(){
+    $('#dob').daterangepicker({
+        singleDatePicker: true,
+        calender_style: "picker_4"
+    }, function (start, end, label) {
+        console.log(start.toISOString(), end.toISOString(), label);
+    });
+
+
+    /*image preview start*/
+    $("#imgInp").change(function(){
+        readURL(this);
+    });
+
+    /*image preview end*/
+});
+
+
+ function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#passport')
+                .attr('src', e.target.result)
+                .width(150)
+                .height(200);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+
+<!-- datepicker -->
+<script type="text/javascript">
+$(document).ready(function () {
+
+    var cb = function (start, end, label) {
+        console.log(start.toISOString(), end.toISOString(), label);
+        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        //alert("Callback has fired: [" + start.format('MMMM D, YYYY') + " to " + end.format('MMMM D, YYYY') + ", label = " + label + "]");
+    }
+
+    var optionSet1 = {
+        startDate: moment().subtract(29, 'days'),
+        endDate: moment(),
+        minDate: '01/01/2012',
+        maxDate: '12/31/2015',
+        dateLimit: {
+            days: 60
+        },
+        showDropdowns: true,
+        showWeekNumbers: true,
+        timePicker: false,
+        timePickerIncrement: 1,
+        timePicker12Hour: true,
+        ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        },
+        opens: 'left',
+        buttonClasses: ['btn btn-default'],
+        applyClass: 'btn-small btn-primary',
+        cancelClass: 'btn-small',
+        format: 'MM/DD/YYYY',
+        separator: ' to ',
+        locale: {
+            applyLabel: 'Submit',
+            cancelLabel: 'Clear',
+            fromLabel: 'From',
+            toLabel: 'To',
+            customRangeLabel: 'Custom',
+            daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+            monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+            firstDay: 1
+        }
+    };
+    $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+    $('#reportrange').daterangepicker(optionSet1, cb);
+    $('#reportrange').on('show.daterangepicker', function () {
+        console.log("show event fired");
+    });
+    $('#reportrange').on('hide.daterangepicker', function () {
+        console.log("hide event fired");
+    });
+    $('#reportrange').on('apply.daterangepicker', function (ev, picker) {
+        console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
+    });
+    $('#reportrange').on('cancel.daterangepicker', function (ev, picker) {
+        console.log("cancel event fired");
+    });
+    $('#options1').click(function () {
+        $('#reportrange').data('daterangepicker').setOptions(optionSet1, cb);
+    });
+    $('#options2').click(function () {
+        $('#reportrange').data('daterangepicker').setOptions(optionSet2, cb);
+    });
+    $('#destroy').click(function () {
+        $('#reportrange').data('daterangepicker').remove();
+    });
+});
+</script>
+<script type="text/javascript" lang="javascript">
+
+$(document).ready(function () {
+
+    //alert("Hi");
+    ajax_nationality();
+    //ajax_states();
+
+    $("select#nationality").change(function(){
+          ajax_states();
+      });
+
+    $("select#origin_state").change(function(){
+          //alert("hi"); //
+          ajax_cities();
+      });
+});
+
+function ajax_nationality() {
+
+  //$('.show-veg').click(function () {
+  //alert("Countries");
+    $.ajax({
+      url: "http://www.holyrosaryng.net/Candidate/nationality",
+      async: false,
+      type: "POST",
+      //data: {},
+      dataType: "html",
+      success: function(data) {
+         // alert(data);
+        $('#nationality').html(data);
+      }
+    })
+  //});
+
+}
+
+function ajax_states() {
+    var country_id = $("#nationality").val();
+    //$()
+    $.ajax({
+      url: "http://www.holyrosaryng.net/Candidate/state",
+      //async: false,
+      type: "POST",
+      data:
+        {
+            'country_id':country_id,
+        },
+    ContentType: "application/json",
+
+     // dataType: "html",
+      success: function(data) {
+         // alert(data);
+        $('#origin_state').html(data);
+      }
+    })
+  //});
+
+}
+</script>
+
+
+    </div>
+    <!-- /page content -->
+
+</div>

@@ -45,6 +45,51 @@ return [
             'driver' => 'token',
             'provider' => 'users',
         ],
+
+
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+
+        'school' => [
+            'driver' => 'session',
+            'provider' => 'schools',
+        ],
+
+        //candidate's guards
+        'nursing_candidate' => [
+            'driver' => 'session',
+            'provider' => 'nursing_candidates',
+        ],
+
+        'medlab_candidate' => [
+            'driver' => 'session',
+            'provider' => 'nursing_candidates',
+        ],
+
+        'midwife_candidate' => [
+            'driver' => 'session',
+            'provider' => 'midwife_candidates',
+        ],
+
+        //students' guards
+        'nursing_student' => [
+            'driver' => 'session',
+            'provider' => 'nursing_students',
+        ],
+
+        'medlab_student' => [
+            'driver' => 'session',
+            'provider' => 'medlab_students',
+        ],
+
+        'midwife_student' => [
+            'driver' => 'session',
+            'provider' => 'midwife_students',
+        ],
+
+
     ],
 
     /*
@@ -68,6 +113,48 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Admin::class,
+        ],
+
+        'schools' => [
+          'driver' => 'eloquent',
+          'model' => App\School::class,
+        ],
+
+        //candidates' providers
+        'nursing_candidates' => [
+          'driver' => 'eloquent',
+          'model' => App\Nursing_candidate::class,
+        ],
+
+        'midwife_candidates' => [
+          'driver' => 'eloquent',
+          'model' => App\Midwife_candidate::class,
+        ],
+
+        'medlab_candidates' => [
+          'driver' => 'eloquent',
+          'model' => App\Medlab_candidate::class,
+        ],
+
+        //students' providers
+        'nursing_students' => [
+          'driver' => 'eloquent',
+          'model' => App\Nursing_student::class,
+        ],
+
+        'medlab_students' => [
+          'driver' => 'eloquent',
+          'model' => App\Medlab_student::class,
+        ],
+
+        'midwife_students' => [
+          'driver' => 'eloquent',
+          'model' => App\Midwife_student::class,
         ],
 
         // 'users' => [
@@ -97,6 +184,36 @@ return [
             'table' => 'password_resets',
             'expire' => 60,
         ],
+
+        'admins' => [
+            'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+
+        'schools' => [
+          'provider' => 'schools',
+          'table' => 'password_resets',
+          'expire' => 15,
+        ],
+
+        'nursing_candidates' => [
+          'provider' => 'schools',
+          'table' => 'password_resets',
+          'expire' => 15,
+        ],
+
+        'medlab_candidates' => [
+          'provider' => 'schools',
+          'table' => 'password_resets',
+          'expire' => 15,
+        ],
+
+        'mifwife_candidates' => [
+          'provider' => 'schools',
+          'table' => 'password_resets',
+          'expire' => 15,
+        ]
     ],
 
 ];

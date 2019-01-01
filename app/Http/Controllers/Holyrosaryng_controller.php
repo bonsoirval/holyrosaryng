@@ -77,8 +77,10 @@ class Holyrosaryng_controller extends Controller
 
     public function midwifery_school_index()
     {
-      echo "midwifery_school_index";
-      exit;
+        $data = array (
+          'title' => 'School of Midwifery, Holy Rosary Hospital, Emekuku',
+        );
+        return view ('frontend.midwife_school_index')->with('data', $data);
     }
 /*
     public function notfound()

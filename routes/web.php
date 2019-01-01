@@ -16,10 +16,11 @@ Route::get('/', function(){
 	return view('frontend.index');
 });
 
+/*
 Route::prefix('nursing_student')->group(function(){
 	Route::get('/login', 'Auth\Nursing_student_login_controller@show_login_form')->name('nursing_student');
 });
-
+*/
 Route::prefix('/')->group(function (){
 	//general frontend
 	Route::get('', 'Holyrosaryng_controller@index')->name('holyrosary_index');
@@ -149,8 +150,7 @@ Route::prefix('nursing/student')->group(function (){
   Route::get('/register_course', 'Nursing_studentController@register_courses')->name('register_course');
   Route::get('/register_course/{id}', 'Nursing_studentController@register_course')->name('register_courses');
   Route::get('/view_courses', 'Nursing_studentController@view_courses')->name('view_courses');
-
-	Route::get('/login', 'Auth\Nursing_student_login_controller@show_login_form')->name('nursing_student_login');
+	Route::get('/login', 'Auth\Nursing_student_login_controller@show_login_form')->name('nursing_student');
 	Route::post('/login', 'Auth\Nursing_student_login_controller@login')->name('nursing_student_login_submit');
 	Route::get('/logout', 'Auth\Nursing_student_login_controller@logout')->name('Nursing_student_logout');
 	Route::get('/register', 'Auth\Nursing_studentRegisterController@showRegistrationForm')->name('register_student_candidate');
@@ -163,50 +163,51 @@ Route::prefix('nursing/student')->group(function (){
 //candidates
 Route::prefix('nursing/candidate')->group(function (){
 	Route::get('/login', 'Auth\Nursing_candidate_login_controller@show_login_form')->name('nursing_candidate_login');
-	Route::post('/login', 'Auth\Nursing_candidateLoginController@login')->name('nursing_candidate_login_submit');
-	Route::get('/logout', 'Auth\Nursing_candidateLoginController@logout')->name('nursing_candidate_logout');
-	Route::get('/register', 'Auth\Nursing_candidateRegisterController@showRegistrationForm')->name('register_nursing_candidate');
-	Route::post('/register', 'Auth\Nursing_candidateRegisterController@register')->name('register_nursing_candidate_submit');
-	Route::get('/', 'Nursing_candidateController@index')->name('nursing_candidate_dashboard');
+	Route::post('/login', 'Auth\Nursing_candidate_login_controller@login')->name('nursing_candidate_login_submit');
+	Route::get('/logout', 'Auth\Nursing_candidate_login_controller@logout')->name('nursing_candidate_logout');
+	Route::get('/register', 'Auth\Nursing_candidate_register_controller@showRegistrationForm')->name('register_nursing_candidate');
+	Route::post('/register', 'Auth\Nursing_candidate_register_controller@register')->name('register_nursing_candidate_submit');
+	Route::get('/', 'Nursing_candidate_controller@index')->name('nursing_candidate_dashboard');
 
-	Route::get('/profile_update', 'Nursing_candidateController@showProfile_updateForm')->name('nursing_candidate_profile_update');
-	Route::post('/profile_update', 'Nursing_candidateController@profile_update')->name('nursing_candidate_profile_updates_submit');
+	Route::get('/profile_update', 'Nursing_candidate_controller@showProfile_updateForm')->name('nursing_candidate_profile_update');
+	Route::post('/profile_update', 'Nursing_candidate_controller@profile_update')->name('nursing_candidate_profile_updates_submit');
 
-	Route::get('/passport_upload', 'Nursing_candidateController@showPassport_uploadForm')->name('nursing_candidate_passport_upload');
-	Route::post('/passport_upload',  'Nursing_candidateController@passport_upload')->name('nursing_candidate_passport_upload_submit');
+	Route::get('/passport_upload', 'Nursing_candidate_controller@showPassport_uploadForm')->name('nursing_candidate_passport_upload');
+	Route::post('/passport_upload',  'Nursing_candidate_controller@passport_upload')->name('nursing_candidate_passport_upload_submit');
 
-	Route::get('/contact', 'Nursing_candidateController@showContactForm')->name('nursing_candidate_contact');
-	Route::post('/contact', 'Nursing_candidateController@contact')->name('nursing_candidate_contact_submit');
+	Route::get('/contact', 'Nursing_candidate_controller@showContactForm')->name('nursing_candidate_contact');
+	Route::post('/contact', 'Nursing_candidate_controller@contact')->name('nursing_candidate_contact_submit');
 
-	Route::get('/nextkin', 'Nursing_candidateController@showNextkinForm')->name('nursing_candidate_nextkin');
-	Route::post('/nextkin', 'Nursing_candidateController@nextkin')->name('nursing_candidate_nextkin_submit');
+	Route::get('/nextkin', 'Nursing_candidate_controller@showNextkinForm')->name('nursing_candidate_nextkin');
+	Route::post('/nextkin', 'Nursing_candidate_controller@nextkin')->name('nursing_candidate_nextkin_submit');
 
-	Route::get('/password_change', 'Nursing_candidateController@showPassword_changeForm')->name('nursing_candidate_password_change');
-	Route::post('/password_change', 'Nursing_candidateController@password_change')->name('nursing_candidate_password_change_submit');
+	Route::get('/password_change', 'Nursing_candidate_controller@showPassword_changeForm')->name('nursing_candidate_password_change');
+	Route::post('/password_change', 'Nursing_candidate_controller@password_change')->name('nursing_candidate_password_change_submit');
 
 
-	Route::get('/olevel1', 'Nursing_candidateController@showOlevel1Form')->name('nursing_candidate_olevel1');
-	Route::post('/olevel1', 'Nursing_candidateController@olevel1')->name('nursing_candidate_olevel1_submit');
+	Route::get('/olevel1', 'Nursing_candidate_controller@showOlevel1Form')->name('nursing_candidate_olevel1');
+	Route::post('/olevel1', 'Nursing_candidate_controller@olevel1')->name('nursing_candidate_olevel1_submit');
 
-	Route::get('/olevel2', 'Nursing_candidateController@showOlevel2Form')->name('nursing_candidate_olevel2');
-	Route::post('/olevel2', 'Nursing_candidateController@olevel2')->name('nursing_candidate_olevel2_submit');
+	Route::get('/olevel2', 'Nursing_candidate_controller@showOlevel2Form')->name('nursing_candidate_olevel2');
+	Route::post('/olevel2', 'Nursing_candidate_controller@olevel2')->name('nursing_candidate_olevel2_submit');
 
-	Route::get('/preview', 'Nursing_candidateController@showPreviewForm')->name('nursing_candidate_preview');
-	Route::post('/preview', 'Nursing_candidateController@preview_submit')->name('nursing_candidate_preview_submit');
+	Route::get('/preview', 'Nursing_candidate_controller@showPreviewForm')->name('nursing_candidate_preview');
+	Route::post('/preview', 'Nursing_candidate_controller@preview_submit')->name('nursing_candidate_preview_submit');
 
-	Route::get('/complete_application', 'Nursing_candidateController@showComplete_applicationForm')->name('nursing_candidate_complete_application');
-	Route::post('/complete_application', 'Nursing_candidateController@complete_application')->name('candidate_complete_application_submit');
+	Route::get('/complete_application', 'Nursing_candidate_controller@showComplete_applicationForm')->name('nursing_candidate_complete_application');
+	Route::post('/complete_application', 'Nursing_candidate_controller@complete_application')->name('candidate_complete_application_submit');
+	Route::get('/','Nursing_candidate_controller@index')->name('nursing_candidate_dashboard');
 });
 
 //medlab Routes
 //candidates
 Route::prefix('medlab/candidate')->group(function (){
-	Route::get('/login', 'Auth\Medlab_candidateLoginController@show_login_form')->name('medlab_candidate_login');
-	Route::post('/login', 'Auth\Medlab_candidateLoginController@login')->name('medlab_candidate_login_submit');
-	Route::get('/logout', 'Auth\Medlab_candidateLoginController@logout')->name('medlab_candidate_logout');
-	Route::get('/register', 'Auth\Medlab_candidateRegisterController@showRegistrationForm')->name('register_medlab_candidate');
-	Route::post('/register', 'Auth\Medlab_candidateRegisterController@register')->name('register_medlab_candidate_submit');
-	Route::get('/', 'Medlab_candidateController@index')->name('medlab_candidate_dashboard');
+	Route::get('/login', 'Auth\Medlab_candidate_login_controller@show_login_form')->name('medlab_candidate_login');
+	Route::post('/login', 'Auth\Medlab_candidate_login_controller@login')->name('medlab_candidate_login_submit');
+	Route::get('/logout', 'Auth\Medlab_candidate_login_controller@logout')->name('medlab_candidate_logout');
+	Route::get('/register', 'Auth\Medlab_candidate_login_controller@showRegistrationForm')->name('register_medlab_candidate');
+	Route::post('/register', 'Auth\Medlab_candidate_login_controller@register')->name('register_medlab_candidate_submit');
+	Route::get('/', 'Medlab_candidate_login_controller@index')->name('medlab_candidate_dashboard');
 
 	Route::get('/profile_update', 'Medlab_candidateController@showProfile_updateForm')->name('medlab_candidate_profile_update');
 	Route::post('/profile_update', 'Medlab_candidateController@profile_update')->name('medlab_candidate_profile_update_submit');
@@ -237,13 +238,38 @@ Route::prefix('medlab/candidate')->group(function (){
 	Route::post('/complete_application', 'Medlab_candidateController@complete_application')->name('medlab_candidate_complete_application_submit');
 });
 
+//students
+Route::prefix('medlab/student')->group(function (){
+  Route::get('/register_course', 'Medlab_student_controller@register_courses')->name('register_course');
+  Route::get('/register_course/{id}', 'Medlab_student_controller@register_course')->name('register_courses');
+  Route::get('/view_courses', 'Medlab_student_controller@view_courses')->name('view_courses');
+
+	Route::get('/login', 'Auth\Medlab_student_login_controller@show_login_form')->name('medlab_student_login');
+	Route::post('/login', 'Auth\Medlab_student_login_controller@login')->name('medlab_student_login_submit');
+	Route::get('/logout', 'Auth\Medlab_student_login_controller@logout')->name('medlab_student_logout');
+	Route::get('/register', 'Auth\Medlab_student_login_controller@showRegistrationForm')->name('register_student_candidate');
+	Route::post('/register', 'Auth\Medlab_student_login_controller@register')->name('register_medlab_student_submit');
+	Route::get('/', 'Medlab_student_controller@index')->name('medlab_student_dashboard');
+});
 
 //midwife Routes
+//students
+Route::prefix('midwife/student')->group(function (){
+  Route::get('/register_course', 'Midwife_student_controller@register_courses')->name('register_course');
+  Route::get('/register_course/{id}', 'Midwife_student_controller@register_course')->name('register_courses');
+  Route::get('/view_courses', 'Midwife_student_controller@view_courses')->name('view_courses');
+	Route::get('/login', 'Auth\Midwife_student_login_controller@show_login_form')->name('midwife_student_login');
+	Route::post('/login', 'Auth\Midwife_student_login_controller@login')->name('midwife_student_login_submit');
+	Route::get('/logout', 'Auth\Midwife_student_login_controller@logout')->name('midwife_student_logout');
+	Route::get('/register', 'Auth\Midwife_student_login_controller@showRegistrationForm')->name('register_student_candidate');
+	Route::post('/register', 'Auth\Midwife_student_login_controller@register')->name('register_midwife_student_submit');
+	Route::get('/', 'Midwife_student_controller@index')->name('midwife_student_dashboard');
+});
 //candidates
 Route::prefix('midwife/candidate')->group(function (){
-	Route::get('/login', 'Auth\Midwife_candidateLoginController@show_login_form')->name('midwife_candidate_login');
-	Route::post('/login', 'Auth\Midwife_candidateLoginController@login')->name('midwife_candidate_login_submit');
-	Route::get('/logout', 'Auth\Midwife_candidateLoginController@logout')->name('midwife_candidate_logout');
+	Route::get('/login', 'Auth\Midwife_candidate_login_controller@show_login_form')->name('midwife_candidate_login');
+	Route::post('/login', 'Auth\Midwife_candidate_login_controller@login')->name('midwife_candidate_login_submit');
+	Route::get('/logout', 'Auth\Midwife_candidate_login_controller@logout')->name('midwife_candidate_logout');
 	Route::get('/register', 'Auth\Midwife_candidateRegisterController@showRegistrationForm')->name('register_midwife_candidate');
 	Route::post('/register', 'Auth\Midwife_candidateRegisterController@register')->name('register_midwife_candidate_submit');
 	Route::get('/', 'Midwife_candidateController@index')->name('midwife_candidate_dashboard');

@@ -42,7 +42,7 @@
                             <nav class="navbar menu-top">
                                 <ul class="menu">
                                   <li><a href="{{route('holyrosary_index')}}">Holy Rosary Main Site</a></li>
-                                    <li class="home"><a href="{{route('medlab_school_index')}}">School of Nursing</a></li>
+                                    <li class="home"><a href="{{route('nursing_school_index')}}">School of Nursing</a></li>
                                     <li><a href="{{route('medlab_school_index')}}">School of MedLab</a></li>
                                     <li><a href="{{route('midwifery_school_index')}}">School of Mid-Wifery</a>
                                 </ul><!-- /.menu -->
@@ -103,11 +103,11 @@
 
                                     </li>
                                     <li>
-                                        <a href="{{route('nursing_student')}}">Students <span class="menu-description">Our History</span></a>
+                                        <a href="{{route('midwife_student_dashboard')}}">Students <span class="menu-description">Our History</span></a>
 
                                     </li>
                                     <li>
-                                        <a href="{{route('nursing_candidate_login')}}">Candidates<span class="menu-description">Process</span></a>
+                                        <a href="{{route('midwife_candidate_login')}}">Candidates<span class="menu-description">Process</span></a>
 
                                     </li>
                                     <li>

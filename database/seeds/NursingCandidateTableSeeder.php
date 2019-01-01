@@ -13,9 +13,9 @@ class NursingCandidateTableSeeder extends Seeder
     {
       DB::table('nursing_candidates')->insert([
         'name' => 'NJOKU OKECHUKWU VALENTINE',
-        'email' => 'bonsoirval@gmail.com',
+        'email' => 'candidate@nursing.nursing',
         'phone' => '07038616871',
-        'password' => bcrypt('bonsoirval@gmail.com'),
+        'password' => bcrypt('candidate@nursing.nursing'),
       ]);
     }
 }

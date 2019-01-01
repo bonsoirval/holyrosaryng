@@ -14,28 +14,10 @@ class NursingStudentTableSeeder extends Seeder
       DB::table('nursing_students')->insert([
         'mat_number' => '',
         'name' => 'NJOKU OKECHUKWU VALENTINE',
-        'email' => 'bonsoirval@gmail.com',
-        'phone' => '07038616871,
+        'email' => 'student@nursing.nursing',
+        'phone' => '07038616871',
         'current_year' => 1,
-        'password' => bcrypt('bonsoirval@gmail.com'),
+        'password' => bcrypt('student@nursing.nursing'),
       ]);
-
-      DB::table('nursing_students')->insert([
-        'mat_number' => '',
-        'name' => 'NJOKU OKECHUKWU VALENTINE',
-        'email' => 'bonsoirval@gmal.com',
-        'phone' => '07038616871,
-        'current_year' => 2,
-        'password' => bcrypt('bonsoirval@gmail.com'),
-      ]);
-
-      DB::table('nursing_students')->insert([
-        'mat_number' => '',
-        'name' => 'NJOKU OKECHUKWU VALENTINE',
-        'email' => 'bonsoirval@gmail.com',
-        'phone' => '07038616871,
-        'current_year' => 3,
-        'password' => bcrypt('bonsoirval@gmai.com'),
-      ]);
-    }
+  }
 }

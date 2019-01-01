@@ -43,10 +43,6 @@
                                     <a href="{{route('nursing_school_index')}}">School of Nursing</a></li>
                                     <li><a href="{{route('medlab_school_index')}}">School of MedLab</a></li>
                                     <li><a href="{{route('midwifery_school_index')}}">School of Mid-Wifery</a>
-                                    <li><a href="http://www.holyrosaryng.net/Candidate/login">Candidate Login</a>
-                                    </li><li><a href="http://www.holyrosaryng.net/Result">Check Result</a></li>
-                                    <li><a href="http://www.holyrosaryng.net/Welcome/mid_wifery">Student Login</a></li>
-                                    <li><a href="< ?php echo base_url(); ?>Welcome/mid_wifery">Admin Login</a></li>
 
                                 </ul><!-- /.menu -->
                             </nav><!-- /.mainnav -->

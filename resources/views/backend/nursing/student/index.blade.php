@@ -1,4 +1,4 @@
-@extends('layouts.backend.nursing.student.app-nursing-student')
+@extends('layouts.backend.nursing.student.app_nursing_student_dashboard')
 
 @section('content')
 <div class="row x_title">

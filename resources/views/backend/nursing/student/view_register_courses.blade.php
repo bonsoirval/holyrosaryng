@@ -1,4 +1,4 @@
-@extends('layouts.backend.nursing.student.app-nursing-student')
+@extends('layouts.backend.nursing.student.')
 @section('css')
     <style>
         a, a:hover {

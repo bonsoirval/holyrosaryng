@@ -109,15 +109,7 @@
                                         <a href="{{route('holyrosary_admission')}}">Admission<span class="menu-description">Process</span></a>
 
                                     </li>
-                                    <li>
-                                        <a href="#">Admins <span class="menu-description">Join A School</span></a>
-                                        <ul class="submenu submenu-right">
-                                            <li><a href="http://www.holyrosaryng.net/Welcome/nursing">School of Nursing</a></li>
-                                            <li><a href="http://www.holyrosaryng.net/Welcome/mid_wifery">School of Mid-Wifery</a></li>
-                                            <li><a href="#">School of MedLab</a></li>
-
-                                        </ul><!-- /.submenu -->
-                                    </li>
+                                    
 
                                     <!-- <li class="has-mega-menu"><a href="{{route('holyrosary_contact')}}">Contact <span class="menu-description"> Reach us</span></a></li> -->
                                 </ul><!-- /.menu -->

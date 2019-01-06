@@ -1,6 +1,6 @@
 <!-- @ extends('layouts.backend.nursing.sidebar')-->
 <!-- @ extends('layouts.backend.nursing.app-nursing-candidate-preview')-->
-@extends('layouts.backend.nursing.app-nursing-candidate')
+@extends('layouts.backend.nursing.candidate.app_nursing_candidate_dashboard')
 <!-- @ extends('layouts.backend.nursing.app-nursing')-->
 
 @section('content')

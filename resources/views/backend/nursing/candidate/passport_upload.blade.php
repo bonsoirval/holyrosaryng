@@ -1,5 +1,4 @@
-@extends('layouts.backend.nursing.app-nursing-candidate')
-
+@extends('layouts.backend.nursing.candidate.app_nursing_candidate_dashboard')
 @section('content')
 <form enctype="multipart/form-data" action = "{{ route('nursing_candidate_passport_upload_submit') }}" method="post" >
 {{ csrf_field() }}

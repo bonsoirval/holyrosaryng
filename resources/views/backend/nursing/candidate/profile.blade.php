@@ -1,5 +1,4 @@
 @extends('layouts.backend.nursing.candidate.app_nursing_candidate_dashboard')
-
 @section('content')
 
               <div class="tab-pane fade in active" id="tab1">
@@ -67,6 +66,7 @@
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
                                                 <select id="nationality"  name="nationality" class="form-control col-md-7 col-xs-12" type="text" name="nationality">
+                                                  <option value="160">Nigeria</option>
                                                   @if(sizeof($countries) > 0)
                                                      @foreach($countries as $country)
                                                         <option value="{{ $country['id'] }}">{{ $country['name'] }}</option>

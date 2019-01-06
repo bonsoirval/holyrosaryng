@@ -57,6 +57,12 @@ return [
             'provider' => 'schools',
         ],
 
+        //admins
+        'nursing_admin' => [
+            'driver' => 'session',
+            'provider' => 'nursing_admins',
+        ],
+
         //candidate's guards
         'nursing_candidate' => [
             'driver' => 'session',
@@ -125,6 +131,12 @@ return [
           'model' => App\School::class,
         ],
 
+        //admins
+        'nursing_admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Nursing_admin::class,
+        ],
+
         //candidates' providers
         'nursing_candidates' => [
           'driver' => 'eloquent',
@@ -189,6 +201,12 @@ return [
             'provider' => 'users',
             'table' => 'password_resets',
             'expire' => 60,
+        ],
+
+        'nursing_admin' => [
+            'provider' => 'nursing_admins',
+            'table' => 'password_resets',
+            'expire' => 15,
         ],
 
         'schools' => [

@@ -1,5 +1,4 @@
-@extends('layouts.backend.nursing.app-nursing-candidate')
-
+@extends('layouts.backend.nursing.candidate.app_nursing_candidate_dashboard')
 @section('content')
       <!--div class="well">
             <div class="tab-content"-->

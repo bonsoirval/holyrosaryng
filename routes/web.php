@@ -64,9 +64,9 @@ Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logou
 
 //Nursing admin routes
 Route::prefix('admin/nursing')->group(function (){
-	Route::get('/login', 'Auth\NursingAdminLoginController@show_login_form')->name('nursing_admin');
-	Route::post('/login', 'Auth\NursingAdminLoginController@login')->name('nursing_admin_login_submit');
-	Route::get('/logout', 'Auth\NursingAdminLoginController@logout')->name('nursing_admin_logout');
+	Route::get('/login', 'Auth\Nursing_admin_login_controller@show_login_form')->name('nursing_admin_login');
+	Route::post('/login', 'Auth\Nursing_admin_login_controller@login')->name('nursing_admin_login_submit');
+	Route::get('/logout', 'Auth\Nursing_admin_login_controller@logout')->name('nursing_admin_logout');
 	Route::get('/', 'NursingAdminController@index')->name('nursing_admin_dashboard');
 
 /*

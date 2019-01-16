@@ -88,7 +88,7 @@
                                     </li>
                                     <li><a href="#">Admin Login</a>
                                       <ul class="submenu submenu-center">
-                                          <li><a href="{{ route('nursing_admin') }}">Nursing</a></li>
+                                          <li><a href="#">Nursing Check Back</a></li>
                                           <li><a href="{{ route('midwife_admin') }}">Mid-Wifery</a></li>
                                           <li><a href="{{ route('medlab_admin') }}">MedLab</a></li>
                                           <li><a href="{{ route('admin_login') }}"> Super Admin</a></li>

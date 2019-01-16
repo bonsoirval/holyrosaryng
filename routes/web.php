@@ -64,10 +64,15 @@ Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logou
 
 //Nursing admin routes
 Route::prefix('admin/nursing')->group(function (){
-	Route::get('/login', 'Auth\Nursing_admin_login_controller@show_login_form')->name('nursing_admin_login');
+	/*Route::get('/login', function () {
+		echo "How you?";
+	})->name('nursing_admin_login');
+	*/
+	Route::get('/login','Auth\Nursing_admin_login_controller@show_login_form')->name('nursing_admin_login');
 	Route::post('/login', 'Auth\Nursing_admin_login_controller@login')->name('nursing_admin_login_submit');
 	Route::get('/logout', 'Auth\Nursing_admin_login_controller@logout')->name('nursing_admin_logout');
-	Route::get('/', 'NursingAdminController@index')->name('nursing_admin_dashboard');
+	//Route::get('/', 'NursingAdminController@index')->name('nursing_admin_dashboard');
+	Route::get('/', 'Nursing_admin_controller@index')->name('nursing_admin_dashboard');
 
 /*
 	//Password reset routes
@@ -150,7 +155,7 @@ Route::prefix('nursing/student')->group(function (){
   Route::get('/register_course', 'Nursing_studentController@register_courses')->name('register_course');
   Route::get('/register_course/{id}', 'Nursing_studentController@register_course')->name('register_courses');
   Route::get('/view_courses', 'Nursing_studentController@view_courses')->name('view_courses');
-	Route::get('/login', 'Auth\Nursing_student_login_controller@show_login_form')->name('nursing_student');
+	Route::get('/login', 'Auth\Nursing_student_login_controller@show_login_form')->name('nursing_student_login');
 	Route::post('/login', 'Auth\Nursing_student_login_controller@login')->name('nursing_student_login_submit');
 	Route::get('/logout', 'Auth\Nursing_student_login_controller@logout')->name('Nursing_student_logout');
 	Route::get('/register', 'Auth\Nursing_studentRegisterController@showRegistrationForm')->name('register_student_candidate');

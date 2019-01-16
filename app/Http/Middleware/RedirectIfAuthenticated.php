@@ -24,7 +24,13 @@ class RedirectIfAuthenticated
           {
             return redirect()->route('admin.dashboard');
           }
-          break;
+          //break;
+          case 'nursing_admin':
+          if(Auth::guard($guard)->check())
+          {
+            return redirect()->route('nursing_admin_dashboard');
+            break;
+          }
 
           case 'nursing_candidate':
           if(Auth::guard($guard)->check())

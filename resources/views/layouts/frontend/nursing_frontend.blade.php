@@ -100,15 +100,12 @@
                                 <ul class="menu">
                                     <li class="home">
                                         <a href="{{route('holyrosary_index')}}">Home <span class="menu-description">Hospital</span></a>
-
                                     </li>
                                     <li>
-                                        <a href="{{route('nursing_student')}}">Students <span class="menu-description">Our History</span></a>
-
+                                        <a href="{{route('nursing_student_dashboard')}}">Students <span class="menu-description">Our History</span></a>
                                     </li>
                                     <li>
                                         <a href="{{route('nursing_candidate_login')}}">Candidates<span class="menu-description">Process</span></a>
-
                                     </li>
                                     <li><a href="{{route('nursing_admin_login')}}">Admin <span class="menu-description">Nursing Admin Login</span></a></li>
                                     <!--li>

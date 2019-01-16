@@ -11,11 +11,11 @@ class NursingAdminTableSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('nursing_admin')->insert([
+      DB::table('nursing_admins')->insert([
         'name' => 'NJOKU OKECHUKWU VALENTINE',
-        'email' => 'nursing_admin@nursing_admin.nursing_admin',
+        'email' => 'nursingadmin@nursingadmin.nursingadmin',
         'phone' => '07038616871',
-        'password' => bcrypt('nursing_admin@nursing_admin.nursing_admin'),
+        'password' => bcrypt('nursingadmin@nursingadmin.nursingadmin'),
       ]);
     }
 }

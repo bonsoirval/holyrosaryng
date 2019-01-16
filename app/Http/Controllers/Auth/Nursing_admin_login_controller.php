@@ -25,7 +25,7 @@ class Nursing_admin_login_controller extends Controller
     public function show_login_form()
     {
       $title = 'Nursing Admin Login';
-      return view('auth.nursing_admin_login', ['title' => $title]);
+      //return view('auth.nursing_admin_login', ['title' => $title]);
     }
 
     public function login(Request $request)

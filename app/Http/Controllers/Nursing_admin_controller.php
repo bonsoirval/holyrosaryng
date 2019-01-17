@@ -35,13 +35,6 @@ class Nursing_admin_controller extends Controller
 
     public function view_students(Request $request)
     {
-        /*
-        $this->validate($request, [
-          'search_level' => 'required',
-          'search_school' => 'required',
-          'search_parameter' => 'required'
-        ]);
-        */
 
         //dd($request);
         $search_level = $request->get('search_level');

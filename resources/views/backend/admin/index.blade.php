@@ -1,4 +1,4 @@
-@extends('layouts.backend.admin.loggedin')
+@extends('layouts.backend.admin.nursing.app_admin_dashboard')
 @section('content')
 
 <div class="row x_title">

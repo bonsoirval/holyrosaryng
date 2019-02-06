@@ -109,7 +109,7 @@
                                         <a href="{{route('holyrosary_admission')}}">Admission<span class="menu-description">Process</span></a>
 
                                     </li>
-                                    
+
 
                                     <!-- <li class="has-mega-menu"><a href="{{route('holyrosary_contact')}}">Contact <span class="menu-description"> Reach us</span></a></li> -->
                                 </ul><!-- /.menu -->
@@ -132,7 +132,7 @@
                                             <span class="un-heading-line un-heading-before">
                                                 <span></span>
                                             </span>
-                                            <a href="http://www.holyrosaryng.net/Welcome/create_account"><button class="flat-button style1">ENROLL TODAY <i class="fa fa-angle-right"></i>
+                                            <a href="#"><button class="flat-button style1">ENROLL TODAY <i class="fa fa-angle-right"></i>
                                                 </button></a>
                                             <span class="un-heading-line un-heading-after">
                                                 <span></span>

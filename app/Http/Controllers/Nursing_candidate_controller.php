@@ -623,6 +623,10 @@ class Nursing_candidate_controller extends Controller
               $profile = json_decode(json_encode($profile));
               $profile = json_decode(json_encode($profile), true);
 
+              if(sizeof($profile) === 0)
+              {
+                return NULL;
+              }
               //converting arrays to associative arrays
                 foreach($profile as $user_profile):
                   $user_profile = array(
@@ -644,6 +648,10 @@ class Nursing_candidate_controller extends Controller
           $nextkins = json_decode(json_encode($nextkins));
           $nextkins = json_decode(json_encode($nextkins), true);
 
+          if(sizeof($nextkins) === 0)
+          {
+            return NULL;
+          }
           //converting arrays to associative arrays
             foreach($nextkins as $nextkin):
               $nextkin = array(
@@ -665,6 +673,10 @@ class Nursing_candidate_controller extends Controller
                 $olevel1 = json_decode(json_encode($olevel1));
                 $olevel1 = json_decode(json_encode($olevel1), true);
 
+                if(sizeof($olevel1) === 0)
+                {
+                  return "No olevel result";
+                }
                 //converting arrays to associative arrays
                   foreach($olevel1 as $candidate_olevel1):
                     $olevel1 = array(
@@ -691,6 +703,10 @@ class Nursing_candidate_controller extends Controller
               $olevel2 = json_decode(json_encode($olevel2));
               $olevel2 = json_decode(json_encode($olevel2), true);
 
+              if(sizeof($olevel2) === 0)
+              {
+                return NULL;
+              }
               //converting arrays to associative arrays
                 foreach($olevel2 as $candidate_olevel2):
                   $olevel2 = array(
@@ -716,6 +732,10 @@ class Nursing_candidate_controller extends Controller
           $contacts = json_decode(json_encode($contacts));
           $contacts = json_decode(json_encode($contacts), true);
 
+          if(sizeof($contacts) === 0)
+          {
+            return NULL;
+          }
           //converting arrays to associative arrays
             foreach($contacts as $user_contacts):
               $contacts = array(

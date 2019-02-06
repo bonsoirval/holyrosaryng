@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Auth;
@@ -10,7 +9,6 @@ class Nursing_admin_login_controller extends Controller
 {
     /**
      * Where to redirect users after registration.
-     *
      * @var string
      */
     //protected $redirectTo = '/medlab'; //original setting
@@ -25,7 +23,7 @@ class Nursing_admin_login_controller extends Controller
     public function show_login_form()
     {
       $title = 'Nursing Admin Login';
-      //return view('auth.nursing_admin_login', ['title' => $title]);
+      return view('auth.nursing_admin_login', ['title' => $title]);
     }
 
     public function login(Request $request)

@@ -406,7 +406,7 @@
                   //$('.show-veg').click(function () {
                   //alert("Countries");
                     $.ajax({
-                      url: "http://www.holyrosaryng.net/Candidate/nationality",
+                      url: "#",
                       async: false,
                       type: "POST",
                       //data: {},
@@ -424,7 +424,7 @@
                     var country_id = $("#nationality").val();
                     //$()
                     $.ajax({
-                      url: "http://www.holyrosaryng.net/Candidate/state",
+                      url: "#",
                       //async: false,
                       type: "POST",
                       data:

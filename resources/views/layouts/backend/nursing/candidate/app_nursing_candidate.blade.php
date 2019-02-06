@@ -38,7 +38,7 @@
 
     @yield('content')
             </body>
-<script src="http://www.holyrosaryng.net/public/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="#" type="text/javascript"></script>
  <script type="text/javascript" lang="javascript">
        /* $(document).ready(function(){
             $(function($) {

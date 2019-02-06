@@ -107,8 +107,11 @@
 
                                     </li>
                                     <li>
-                                        <a href="{{route('midwife_candidate_login')}}">Candidates<span class="menu-description">Process</span></a>
-
+                                        <a href="#">Candidates<span class="menu-description">Process</span></a>
+                                        <ul class="submenu submenu-right">
+                                            <li><a href="http://www.holyrosaryng.net/Welcome/nursing">Register</a></li>
+                                            <li><a href="{{route('midwife_candidate_login')}}">Login</a></li>
+                                        </ul>
                                     </li>
                                     <li>
                                         <a href="#">Alumni <span class="menu-description">Join A School</span></a>

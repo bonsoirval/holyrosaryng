@@ -7,7 +7,7 @@
             <li>Pay the sum of N 000.000 into the Bank: , Account Number: , and Account Name: </li>
             <li>Go to the administration block of the school and submit your payment tell and get your official receipt.</li>
             <li>Collect your scratch from same place.</li>
-            <li>Come back to this same website, <a href="http://www.holyrosaryng.net/Welcome/create_account">Create Account Here</a>.</li>
+            <li>Come back to this same website, <a href="#">Create Account Here</a>.</li>
             <li>Fill the form.</li>
             <li>Note: Use any password you can easily remember.</li>
             <li>After creating account, login into the website and continue </li>
@@ -29,5 +29,5 @@
         </ol>
         </div>
     </div>
-</div>      
+</div>
 @endsection

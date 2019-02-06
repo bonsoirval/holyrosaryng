@@ -13,7 +13,7 @@
                                     <h1>Profile Final Preview</h1>
                                     <div class="clearfix"></div>
                                 </div>
-                                <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/preview/" data-parsley-validate="" class="form-horizontal form-label-left">
+                                <form id="profile" method="post" action="#" data-parsley-validate="" class="form-horizontal form-label-left">
                                                                             <div class="form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Gender: <span class="required">*</span>
                                         </label>
@@ -92,7 +92,7 @@
                                     <div class="clearfix"></div>
                                 </div>
 
-                                <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/profile" data-parsley-validate="" class="form-horizontal form-label-left">
+                                <form id="profile" method="post" action="#" data-parsley-validate="" class="form-horizontal form-label-left">
                                                                             <div class="form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Contact Address <span class="required">*</span>
                                         </label>
@@ -140,7 +140,7 @@
                                     <div class="clearfix"></div>
                                 </div>
 
-                                <form id="profile" method="post" action="http://www.holyrosaryng.net/Candidate/profile" data-parsley-validate="" class="form-horizontal form-label-left">
+                                <form id="profile" method="post" action="#" data-parsley-validate="" class="form-horizontal form-label-left">
                                                                             <div class="form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Next of Kin Name <span class="required">*</span>
                                         </label>

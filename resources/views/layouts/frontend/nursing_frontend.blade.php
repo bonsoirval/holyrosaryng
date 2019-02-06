@@ -98,25 +98,24 @@
 
                             <nav id="mainnav" class="mainnav">
                                 <ul class="menu">
-                                    <li class="home">
-                                        <a href="{{route('holyrosary_index')}}">Home <span class="menu-description">Hospital</span></a>
+                                    <li class="home"><a href="{{route('holyrosary_index')}}">Home <span class="menu-description">Hospital</span></a></li>
+                                    <li><a href="{{route('nursing_student_dashboard')}}">Students <span class="menu-description">Our History</span></a></li>
+                                    <li><a href="#">Candidates<span class="menu-description">Process</span></a>
+                                      <ul class="submenu submenu-right">
+                                          <li><a href="{{route('nursing_candidate_register')}}">Register</a></li>
+                                          <li><a href="{{route('nursing_candidate_login')}}">Login</a></li>
+                                      </ul><!-- /.submenu >
                                     </li>
+                                    <li><a href="{{ route('nursing_admin_login') }}">Admin<span class="menu-description">Nursing Admin Login</span></a></li>
                                     <li>
-                                        <a href="{{route('nursing_student_dashboard')}}">Students <span class="menu-description">Our History</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="{{route('nursing_candidate_login')}}">Candidates<span class="menu-description">Process</span></a>
-                                    </li>
-                                    <li><a href="{{route('nursing_admin_login')}}">Admin <span class="menu-description">Nursing Admin Login</span></a></li>
-                                    <!--li>
                                         <a href="#">Alumni <span class="menu-description">Join A School</span></a>
                                         <ul class="submenu submenu-right">
-                                            <li><a href="http://www.holyrosaryng.net/Welcome/nursing">School of Nursing</a></li>
-                                            <li><a href="http://www.holyrosaryng.net/Welcome/mid_wifery">School of Mid-Wifery</a></li>
+                                            <li><a href="#">School of Nursing</a></li>
+                                            <li><a href="#">School of Mid-Wifery</a></li>
                                             <li><a href="#">School of MedLab</a></li>
 
                                         </ul><!-- /.submenu >
-                                    </li-->
+                                    </li>
 
                                     <!--li class="has-mega-menu"><a href="{{route('holyrosary_contact')}}">Contact <span class="menu-description"> Reach us</span></a></li-->
                                 </ul><!-- /.menu -->

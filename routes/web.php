@@ -63,16 +63,26 @@ Auth::routes();
 Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logout');
 
 //Nursing admin routes
+Route::get('/login','Auth\Nursing_admin_login_controller@show_login_form')->name('nursing_admin_login');
 Route::prefix('admin/nursing')->group(function (){
+	Route::get('/login','Auth\Nursing_admin_login_controller@show_login_form')->name('nursing_admin_login');
+	Route::get('/login', 'Auth\Nursing_admin_login_controller@login')->name('nursing_admin_login_submit');
+	Route::get('/logout', 'Auth\Nursing_admin_login_controller@logout')->name('nursing_admin_logout');
+	Route::get('/', 'Nursing_admin_controller@index')->name('nursing_admin_dashboard');
+
 	/*Route::get('/login', function () {
 		echo "How you?";
 	})->name('nursing_admin_login');
 	*/
-	Route::get('/login','Auth\Nursing_admin_login_controller@show_login_form')->name('nursing_admin_login');
-	Route::post('/login', 'Auth\Nursing_admin_login_controller@login')->name('nursing_admin_login_submit');
-	Route::get('/logout', 'Auth\Nursing_admin_login_controller@logout')->name('nursing_admin_logout');
-	//Route::get('/', 'NursingAdminController@index')->name('nursing_admin_dashboard');
-	Route::get('/', 'Nursing_admin_controller@index')->name('nursing_admin_dashboard');
+
+	//Route::post('/login','Auth\Nursing_admin_login_controller@login'
+	/*function(){
+		echo 'xup';
+	//})->name('nursing_admin_login_submit');
+	//'Auth\Nursing_admin_login_controller@login')->name('nursing_admin_login_submit');
+
+
+
 
 /*
 	//Password reset routes
@@ -170,8 +180,8 @@ Route::prefix('nursing/candidate')->group(function (){
 	Route::get('/login', 'Auth\Nursing_candidate_login_controller@show_login_form')->name('nursing_candidate_login');
 	Route::post('/login', 'Auth\Nursing_candidate_login_controller@login')->name('nursing_candidate_login_submit');
 	Route::get('/logout', 'Auth\Nursing_candidate_login_controller@logout')->name('nursing_candidate_logout');
-	Route::get('/register', 'Auth\Nursing_candidate_register_controller@showRegistrationForm')->name('register_nursing_candidate');
-	Route::post('/register', 'Auth\Nursing_candidate_register_controller@register')->name('register_nursing_candidate_submit');
+	Route::get('/register', 'Auth\Nursing_candidate_register_controller@show_registration_form')->name('nursing_candidate_register');
+	Route::post('/register', 'Auth\Nursing_candidate_register_controller@register')->name('nursing_candidate_register_submit');
 	Route::get('/', 'Nursing_candidate_controller@index')->name('nursing_candidate_dashboard');
 
 	Route::get('/profile_update', 'Nursing_candidate_controller@showProfile_updateForm')->name('nursing_candidate_profile_update');

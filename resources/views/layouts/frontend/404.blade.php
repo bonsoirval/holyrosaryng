@@ -165,7 +165,7 @@
                                         <a href="{{ route('schools') }}">Schools <span class="menu-description">Join A School</span></a>
                                         <ul class="submenu submenu-right">
                                             <li><a href="{{ route('nursing_candidate_login') }}">School of Nursing</a></li>
-                                            <li><a href="http://www.holyrosaryng.net/Welcome/mid_wifery">School of Mid-Wifery</a></li>
+                                            <li><a href="#">School of Mid-Wifery</a></li>
                                             <li><a href="#">School of MedLab</a></li>
 
                                         </ul><!-- /.submenu -->

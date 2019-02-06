@@ -13,6 +13,7 @@ return [
     */
 
     'nursing_candidate' => env('APP_NURSING', 'Nursing Student Dashboard'),
+    'nursing_candidate_register' => env('APP_NURSING_REGISTRATION', 'Nursing Candidate'),
 
     /*
     |--------------------------------------------------------------------------
@@ -24,7 +25,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'l'),
     'admin' => env('APP_ADMIN', 'ADMIN LOGIN PANEL'),
 
     /*

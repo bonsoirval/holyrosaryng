@@ -25,8 +25,8 @@
 
                     <div>
                         <input type="submit" value="Log in" class="btn btn-default submit login" required="required"  />
-                        <a href="http://www.holyrosaryng.net/Welcome/create_account">Recover Password</a>
-                        <!--a class="reset_pass" href="http://www.holyrosaryng.net/Candidate/forgot">Lost your password?</a-->
+                        <a href="#">Recover Password</a>
+                        <!--a class="reset_pass" href="#">Lost your password?</a-->
                     </div>
                     <div class="clearfix"></div>
 

@@ -64,10 +64,16 @@ Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logou
 
 //Nursing admin routes
 Route::get('/login','Auth\Nursing_admin_login_controller@show_login_form')->name('nursing_admin_login');
+
 Route::prefix('admin/nursing')->group(function (){
+	Route::post('/import', 'Nursing_admin_controller@import')->name('import');
 	Route::get('/login','Auth\Nursing_admin_login_controller@show_login_form')->name('nursing_admin_login');
-	Route::get('/login', 'Auth\Nursing_admin_login_controller@login')->name('nursing_admin_login_submit');
+	Route::post('/login', 'Auth\Nursing_admin_login_controller@login')->name('nursing_admin_login_submit');
 	Route::get('/logout', 'Auth\Nursing_admin_login_controller@logout')->name('nursing_admin_logout');
+	Route::get('/nursing_candidate_pin_problem', 'Nursing_admin_controller@nursing_candidate_pin_problem')->name('nursing_candidate_pin_problem');
+	Route::post('/nursing_candidate_pin_problem', 'Nursing_admin_controller@nursing_candidate_pin_problem_submit')->name('nursing_candidate_pin_problem_submit');
+	Route::get('/nursing_candidate_upload_result', 'Nursing_admin_controller@nursing_candidate_upload_result')->name('nursing_candidate_upload_result');
+	Route::post('/nursing_candidate_upload_result', 'Nursing_admin_controller@nursing_candidate_upload_result_submit')->name('nursing_candidate_upload_result_submit');
 	Route::get('/', 'Nursing_admin_controller@index')->name('nursing_admin_dashboard');
 
 	/*Route::get('/login', function () {
@@ -220,37 +226,37 @@ Route::prefix('medlab/candidate')->group(function (){
 	Route::get('/login', 'Auth\Medlab_candidate_login_controller@show_login_form')->name('medlab_candidate_login');
 	Route::post('/login', 'Auth\Medlab_candidate_login_controller@login')->name('medlab_candidate_login_submit');
 	Route::get('/logout', 'Auth\Medlab_candidate_login_controller@logout')->name('medlab_candidate_logout');
-	Route::get('/register', 'Auth\Medlab_candidate_login_controller@showRegistrationForm')->name('register_medlab_candidate');
-	Route::post('/register', 'Auth\Medlab_candidate_login_controller@register')->name('register_medlab_candidate_submit');
-	Route::get('/', 'Medlab_candidate_login_controller@index')->name('medlab_candidate_dashboard');
+	Route::get('/register', 'Auth\Medlab_candidate_register_controller@show_registration_form')->name('medlab_candidate_register');
+	Route::post('/register', 'Auth\Medlab_candidate_register_controller@register')->name('medlab_candidate_register_submit');
+	Route::get('/', 'Medlab_candidate_controller@index')->name('medlab_candidate_dashboard');
 
-	Route::get('/profile_update', 'Medlab_candidateController@showProfile_updateForm')->name('medlab_candidate_profile_update');
-	Route::post('/profile_update', 'Medlab_candidateController@profile_update')->name('medlab_candidate_profile_update_submit');
+	Route::get('/profile_update', 'Medlab_candidate_controller@showProfile_updateForm')->name('medlab_candidate_profile_update');
+	Route::post('/profile_update', 'Medlab_candidate_controller@profile_update')->name('medlab_candidate_profile_update_submit');
 
-	Route::get('/passport_upload', 'Medlab_candidateController@showPassport_uploadForm')->name('medlab_candidate_passport_upload');
-	Route::post('/passport_upload',  'Medlab_candidateController@passport_upload')->name('medlab_candidate_passport_upload_submit');
+	Route::get('/passport_upload', 'Medlab_candidate_controller@showPassport_uploadForm')->name('medlab_candidate_passport_upload');
+	Route::post('/passport_upload',  'Medlab_candidate_controller@passport_upload')->name('medlab_candidate_passport_upload_submit');
 
-	Route::get('/contact', 'Medlab_candidateController@showContactForm')->name('medlab_candidate_contact');
-	Route::post('/contact', 'Medlab_candidateController@contact')->name('medlab_candidate_contact_submit');
+	Route::get('/contact', 'Medlab_candidate_controller@showContactForm')->name('medlab_candidate_contact');
+	Route::post('/contact', 'Medlab_candidate_controller@contact')->name('medlab_candidate_contact_submit');
 
-	Route::get('/nextkin', 'Medlab_candidateController@showNextkinForm')->name('medlab_candidate_nextkin');
-	Route::post('/nextkin', 'Medlab_candidateController@nextkin')->name('medlab_candidate_nextkin_submit');
+	Route::get('/nextkin', 'Medlab_candidate_controller@showNextkinForm')->name('medlab_candidate_nextkin');
+	Route::post('/nextkin', 'Medlab_candidate_controller@nextkin')->name('medlab_candidate_nextkin_submit');
 
-	Route::get('/password_change', 'Medlab_candidateController@showPassword_changeForm')->name('medlab_candidate_password_change');
-	Route::post('/password_change', 'Medlab_candidateController@password_change')->name('medlab_candidate_password_change_submit');
+	Route::get('/password_change', 'Medlab_candidate_controller@showPassword_changeForm')->name('medlab_candidate_password_change');
+	Route::post('/password_change', 'Medlab_candidate_controller@password_change')->name('medlab_candidate_password_change_submit');
 
 
-	Route::get('/olevel1', 'Medlab_candidateController@showOlevel1Form')->name('medlab_candidate_olevel1');
-	Route::post('/olevel1', 'Medlab_candidateController@olevel1')->name('medlab_candidates_olevel1_submit');
+	Route::get('/olevel1', 'Medlab_candidate_controller@showOlevel1Form')->name('medlab_candidate_olevel1');
+	Route::post('/olevel1', 'Medlab_candidate_controller@olevel1')->name('medlab_candidates_olevel1_submit');
 
-	Route::get('/olevel2', 'Medlab_candidateController@showOlevel2Form')->name('medlab_candidate_olevel2');
-	Route::post('/olevel2', 'Medlab_candidateController@olevel2')->name('medlab_candidates_olevel2_submit');
+	Route::get('/olevel2', 'Medlab_candidate_controller@showOlevel2Form')->name('medlab_candidate_olevel2');
+	Route::post('/olevel2', 'Medlab_candidate_controller@olevel2')->name('medlab_candidates_olevel2_submit');
 
-	Route::get('/preview', 'Medlab_candidateController@showPreviewForm')->name('medlab_candidate_preview');
-	Route::post('/preview', 'Medlab_candidateController@preview_submit')->name('medlab_candidate_preview_submit');
+	Route::get('/preview', 'Medlab_candidate_controller@showPreviewForm')->name('medlab_candidate_preview');
+	Route::post('/preview', 'Medlab_candidate_controller@preview_submit')->name('medlab_candidate_preview_submit');
 
-	Route::get('/complete_application', 'Medlab_candidateController@showComplete_applicationForm')->name('medlab_candidate_complete_application');
-	Route::post('/complete_application', 'Medlab_candidateController@complete_application')->name('medlab_candidate_complete_application_submit');
+	Route::get('/complete_application', 'Medlab_candidate_controller@showComplete_applicationForm')->name('medlab_candidate_complete_application');
+	Route::post('/complete_application', 'Medlab_candidate_controller@complete_application')->name('medlab_candidate_complete_application_submit');
 });
 
 //students

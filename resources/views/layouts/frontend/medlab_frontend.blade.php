@@ -109,8 +109,9 @@
                                     <li>
                                         <a href="#">Candidates<span class="menu-description">Process</span></a>
                                         <ul class="submenu submenu-right">
-                                            <li><a href="http://www.holyrosaryng.net/Welcome/nursing">Register</a></li>
-                                            <li><a href="{{route('midwife_candidate_login')}}">Login</a></li>
+                                            <!--li><a href="http://www.holyrosaryng.net/Welcome/nursing">Register</a></li-->
+                                            <li><a href="{{route('medlab_candidate_register')}}">Register</a></li>
+                                            <li><a href="{{route('medlab_candidate_login')}}">Login</a></li>
                                         </ul>
                                     </li>
                                     <li>

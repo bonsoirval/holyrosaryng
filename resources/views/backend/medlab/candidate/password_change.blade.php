@@ -1,5 +1,4 @@
-@extends('layouts.backend.medlab.app-medlab')
-
+@extends('layouts.backend.medlab.candidate.app_medlab_candidate_dashboard')
 @section('content')
 
 <div class="tab-pane fade in active" id="tab1">

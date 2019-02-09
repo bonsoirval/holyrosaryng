@@ -1,5 +1,4 @@
-@extends('layouts.backend.medlab.medlab-register')
-
+@extends('layouts.backend.medlab.medlab_candidate_register')
 @section('content')
 <div class="container">
     <div class="row">
@@ -8,7 +7,7 @@
                 <div class="panel-heading">Medlab Candidate Registration</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register_medlab_candidate_submit') }}">
+                    <form class="form-horizontal" method="POST" action="{{ route('medlab_candidate_register_submit') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -131,7 +130,7 @@
                 <div class="panel-heading">Register</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register_medlab_candidate_submit') }}">
+                    <form class="form-horizontal" method="POST" action="{{ route('medlab_candidate_register_submit') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">

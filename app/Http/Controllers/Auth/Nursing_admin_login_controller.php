@@ -44,7 +44,7 @@ class Nursing_admin_login_controller extends Controller
             $request->remember))
       {
         //if successful, then redirect to their intended location
-        return redirect()->intended(route('admin.dashboard'));
+        return redirect()->intended(route('nursing_admin_dashboard'));
       }
 
       //if unsuccessful, then redirect back to the login with for data

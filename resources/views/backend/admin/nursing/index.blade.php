@@ -1,6 +1,5 @@
 @extends('layouts.backend.admin.nursing.app_admin_dashboard')
 @section('content')
-
 <div class="row x_title">
   <div class="col-md-6">
     <h3>Administrative Tools</h3>

@@ -15,7 +15,7 @@ use Image;
 
 use Validator;
 
-class Medlab_candidateController extends Controller
+class Medlab_candidate_controller extends Controller
 {
   /**
      * Log the user out of the application.

@@ -1,8 +1,5 @@
 @extends('layouts.backend.medlab.app-medlab_candidate_preview')
 @section('content')
-
-
-
     <div class="well">
         <div class="tab-content">
 

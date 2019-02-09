@@ -41,7 +41,7 @@
       <img src="{{ URL::to("images/candidates/nursing/$passport") }}" alt="Candidate Passport" width='70' lenght= '70' ></td></tr>
     <tr><td>STUDENT ID:</td><td>{{ Auth::user()->id }}</td></tr>
     <!--tr><td>EXAMINATION:</td><td>< ?php echo $user->id; ?></td></tr-->
-    <tr><td>SURNAME:</td><td>{{ strtoupper(Auth::user()->name) }}</td></tr>
+    <tr><td>FULL NAME:</td><td>{{ strtoupper(Auth::user()->name) }}</td></tr>
     <tr><td>GENDER</td><td>{{ strtoupper($user_profile['gender']) }}</td></tr>
     <tr><td>PHONE</td><td>{{ strtoupper(Auth::user()->phone) }}</td></tr>
     <tr><td>DATE OF BIRTH:</td><td>{{ $user_profile['dob'] }}</td></tr>

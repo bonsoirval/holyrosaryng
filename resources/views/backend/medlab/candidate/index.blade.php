@@ -1,4 +1,4 @@
-@extends('layouts.backend.medlab.app-medlab')
+@extends('layouts.backend.medlab.candidate.app_medlab_candidate_dashboard')
 @section('content')
 <div class="row x_title">
   <div class="col-md-6">

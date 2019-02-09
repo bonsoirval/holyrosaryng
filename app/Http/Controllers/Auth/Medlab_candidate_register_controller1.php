@@ -13,7 +13,7 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\DB;
 
-class Medlab_candidateRegisterController extends Controller
+class Medlab_candidate_register_controller extends Controller
 {
     /*
     |--------------------------------------------------------------------------
@@ -112,9 +112,9 @@ class Medlab_candidateRegisterController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function showRegistrationForm()
+    public function show_registration_form()
     {
-        return view('auth.register-medlab-candidate');
+        return view('auth.register_medlab_candidate');
     }
 
     public function register(Request $request)
@@ -128,8 +128,7 @@ class Medlab_candidateRegisterController extends Controller
 
         Auth::guard('medlab_candidate')->login($user);
 
-        return $this->registered($request, $user)
-                        ?: redirect($this->redirectPath());
+        return $this->registered($request, $user) ?: redirect($this->redirectPath());
     }
 
 

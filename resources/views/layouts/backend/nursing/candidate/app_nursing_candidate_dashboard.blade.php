@@ -44,7 +44,7 @@
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                <img src="images/img.jpg" alt="schoolLogo" class="img-circle profile_img">
+                <img src="{{asset('images/schools/nursing.png')}}" alt="schoolLogo" class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>

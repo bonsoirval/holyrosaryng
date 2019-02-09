@@ -44,7 +44,7 @@
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                <img src="images/img.jpg" alt="schoolLogo" class="img-circle profile_img">
+                <img src="{{asset('images/schools/nursing.png')}}" alt="schoolLogo" class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
@@ -80,6 +80,20 @@
                     <ul class="nav child_menu">
                       <li><a href="{{ route('nursing_candidate_preview') }}">Preview Application</a></li>
                       <li><a href="{{ route('nursing_candidate_complete_application') }}">Complete Application</a></li>
+
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Candidate Menu<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="{{ route('nursing_candidate_pin_problem') }}">Solve PIN Problems</a></li>
+                      <li><a href="{{ route('nursing_candidate_upload_result') }}">Upload Result</a></li>
+
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> General Qualification <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="{{ route('nursing_candidate_olevel1') }}">Olevel (First Sitting)</a></li>
+                      <li><a href="{{ route('nursing_candidate_olevel2') }}">Olevel (Second Sitting)</a></li>
 
                     </ul>
                   </li>

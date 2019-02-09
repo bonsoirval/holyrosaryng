@@ -15,6 +15,9 @@ return [
     'nursing_candidate' => env('APP_NURSING', 'Nursing Student Dashboard'),
     'nursing_candidate_register' => env('APP_NURSING_REGISTRATION', 'Nursing Candidate'),
 
+    'medlab_candidate' => env('APP_MEDLAB', 'Medlab Student Dashboard'),
+    'medlab_candidate_register' => env('APP_MEDLAB_REGISTRATION', 'Medlab Candidate'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Name

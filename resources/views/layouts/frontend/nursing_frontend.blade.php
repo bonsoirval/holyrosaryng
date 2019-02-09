@@ -104,18 +104,18 @@
                                       <ul class="submenu submenu-right">
                                           <li><a href="{{route('nursing_candidate_register')}}">Register</a></li>
                                           <li><a href="{{route('nursing_candidate_login')}}">Login</a></li>
-                                      </ul><!-- /.submenu >
+                                      </ul><!---/.submenu -->
                                     </li>
                                     <li><a href="{{ route('nursing_admin_login') }}">Admin<span class="menu-description">Nursing Admin Login</span></a></li>
-                                    <li>
+                                    <!--li>
                                         <a href="#">Alumni <span class="menu-description">Join A School</span></a>
                                         <ul class="submenu submenu-right">
                                             <li><a href="#">School of Nursing</a></li>
                                             <li><a href="#">School of Mid-Wifery</a></li>
                                             <li><a href="#">School of MedLab</a></li>
 
-                                        </ul><!-- /.submenu >
-                                    </li>
+                                        </ul></.submenu >
+                                    </li-->
 
                                     <!--li class="has-mega-menu"><a href="{{route('holyrosary_contact')}}">Contact <span class="menu-description"> Reach us</span></a></li-->
                                 </ul><!-- /.menu -->

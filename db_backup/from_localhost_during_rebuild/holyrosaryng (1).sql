@@ -723,10 +723,10 @@ CREATE TABLE `nursing_candidate_pins` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nursing_candidate_result`
+-- Table structure for table `nursing_candidate_results`
 --
 
-CREATE TABLE `nursing_candidate_result` (
+CREATE TABLE `nursing_candidate_results` (
   `id` int(10) UNSIGNED NOT NULL,
   `exam_number` smallint(5) UNSIGNED NOT NULL,
   `user_id` smallint(5) UNSIGNED NOT NULL,
@@ -5194,9 +5194,9 @@ ALTER TABLE `nursing_candidate_pins`
   ADD UNIQUE KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `nursing_candidate_result`
+-- Indexes for table `nursing_candidate_results`
 --
-ALTER TABLE `nursing_candidate_result`
+ALTER TABLE `nursing_candidate_results`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `user_id` (`user_id`);
 
@@ -5378,9 +5378,9 @@ ALTER TABLE `nursing_candidate_interview`
 ALTER TABLE `nursing_candidate_pins`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `nursing_candidate_result`
+-- AUTO_INCREMENT for table `nursing_candidate_results`
 --
-ALTER TABLE `nursing_candidate_result`
+ALTER TABLE `nursing_candidate_results`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `nursing_mat_number`

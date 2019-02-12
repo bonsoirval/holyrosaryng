@@ -74,6 +74,8 @@ Route::prefix('admin/nursing')->group(function (){
 	Route::post('/nursing_candidate_pin_problem', 'Nursing_admin_controller@nursing_candidate_pin_problem_submit')->name('nursing_candidate_pin_problem_submit');
 	Route::get('/nursing_candidate_upload_result', 'Nursing_admin_controller@nursing_candidate_upload_result')->name('nursing_candidate_upload_result');
 	Route::post('/nursing_candidate_upload_result', 'Nursing_admin_controller@nursing_candidate_upload_result_submit')->name('nursing_candidate_upload_result_submit');
+	Route::get('/download_candidate_result_xls', 'Nursing_admin_controller@download_candidate_result_xls')->name('download_candidate_result_xls');
+
 	Route::get('/', 'Nursing_admin_controller@index')->name('nursing_admin_dashboard');
 
 	/*Route::get('/login', function () {

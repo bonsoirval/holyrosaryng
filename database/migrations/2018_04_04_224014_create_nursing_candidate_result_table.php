@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateNursingCandidateResultTable extends Migration
+class CreateNursingCandidateResultsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateNursingCandidateResultTable extends Migration
      */
     public function up()
     {
-        Schema::create('nursing_candidate_result', function (Blueprint $table) {
+        Schema::create('nursing_candidate_results', function (Blueprint $table) {
           $table->increments('id');
           $table->unsignedSmallInteger('exam_number');
           $table->unsignedSmallInteger('user_id')->unique();
@@ -31,6 +31,6 @@ class CreateNursingCandidateResultTable extends Migration
      */
     public function down()
     {
-      Schema::dropIfExists('nursing_candidate_result');
+      Schema::dropIfExists('nursing_candidate_results');
     }
 }

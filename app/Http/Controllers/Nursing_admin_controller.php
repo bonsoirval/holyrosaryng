@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Nursing_student;
+use App\Nursing_candidate_results;
 use Illuminate\Support\Facades\DB;
 use Session;
 use Excel;
@@ -12,6 +13,35 @@ use File;
 
 class Nursing_admin_controller extends Controller
 {
+  public function download_candidate_result_xls()
+  {
+      $type = 'xls';
+      $data = Nursing_candidate_results::get()->toArray();
+      return Excel::create('nursing_candidate_result_template', function($excel) use($data){
+        $excel->sheet('mySheet', function($sheet) use ($data){
+          //set needed column headers
+          $sheet->cell('A1', function($cell){$cell->setValue('id'); });
+          $sheet->cell('B1', function($cell){$cell->setValue('exam_number'); });
+          $sheet->cell('C1', function($cell){$cell->setValue('user_id'); });
+          $sheet->cell('D1', function($cell){$cell->setValue('score'); });
+          $sheet->cell('E1', function($cell){$cell->setValue('remark'); });
+          if(!empty($data)){
+            foreach($data as $key => $value)
+            {
+              //Uncomment to fill values
+              //$i = $key+2;
+              /*$sheet->cell('A'.$i, $value['id']);
+              $sheet->cell('B'.$i, $value['exam_number']);
+              $sheet->cell('C'.$i, $value['user_id']);
+              $sheet->cell('D'.$i, $value['score']);
+              $sheet->cell('E'.$i, $value['remark']);
+              */
+            }
+          }
+          //$sheet->fromArray($data);
+        });
+      })->download($type);
+  }
   public function import(Request $request)
   {
       //error debugging variables
@@ -26,7 +56,6 @@ class Nursing_admin_controller extends Controller
       if($request->hasFile('file')){
           $extension = File::extension($request->file->getClientOriginalName());
           if ($extension == "xlsx" || $extension == "xls" || $extension == "csv") {
-
               $path = $request->file->getRealPath();
               $data = Excel::load($path, function($reader) {})->get();
               if(!empty($data) && $data->count()){
@@ -38,34 +67,9 @@ class Nursing_admin_controller extends Controller
                       'remark' => $value->remark,
                       ];
                   }
-
                   if(!empty($insert)){
-                      /*
-                      $errormsg = "";
-                      $result = false;
-                      try{
-                          $result = DB::table('members')->insert(
-                                  [
-                                      'username' => $request->username,
-                                      'phone' => $request->phone,
-                                      'status' => 1
-                                  ]
-                              );
-                      }catch(Exception $exception)
-                      {
-                          $errormsg = 'Database error! ' . $exception->getCode();
-                      }
-                      return Response::json(['success'=>$result,'errormsg'=>$errormsg]);
-                      */
-                      /*
-                      try {
-                          $user = User::findOrFail($request->input('user_id'));
-                      } catch (ModelNotFoundException $exception) {
-                          return back()->withError($exception->getMessage())->withInput();
-                      }*/
-
-                      try{
-                        $insertData = DB::table('nursing_candidate_result')->insert($insert);
+                    try{
+                        $insertData = DB::table('nursing_candidate_results')->insert($insert);
                         if ($insertData) {
                             Session::flash('success', 'Your Data has successfully imported');
                         }else {
@@ -75,26 +79,22 @@ class Nursing_admin_controller extends Controller
                       }catch(\Exception $exception)
                       {
                           $errormsg = 'Database error! ' . $exception->getCode();
-                          //Session::flash('error', $errormsg);
                           Session::flash('error', "Make sure no duplicate value(s) for user_id column. Contact super admin if problem continues using bonsoirval@gmail.com");
                           return back();
                       }
                   }
               }
-
               return back();
-
           }else {
               Session::flash('error', 'File is a '.$extension.' file.!! Please upload a valid xls/csv file..!!');
               return back();
           }
       }
   }
-
-    public function nursing_candidate_upload_result()
-    {
-        return view('backend.admin.nursing.nursing_candidate_upload_result_submit');
-    }
+  public function nursing_candidate_upload_result()
+  {
+      return view('backend.admin.nursing.nursing_candidate_upload_result_submit');
+  }
 
     public function nursing_candidate_upload_result_submit(Request $request)
     {
@@ -122,7 +122,7 @@ class Nursing_admin_controller extends Controller
                     }
 
                     if(!empty($insert)){
-                        $insertData = DB::table('nursing_candidate_result')->insert($insert);
+                        $insertData = DB::table('nursing_candidate_results')->insert($insert);
                         if ($insertData) {
                             Session::flash('success', 'Your Data has successfully imported');
                         }else {
@@ -141,30 +141,6 @@ class Nursing_admin_controller extends Controller
         }
     }
 
-    /*
-    public function nursing_candidate_upload_result_submit()
-    {
-          if($request->hasFile('sample_file'))
-          {
-               $path = $request->file('sample_file')->getRealPath();
-               $data = \Excel::load($path)->get();
-               if($data->count()){
-                   foreach ($data as $key => $value) {
-                       $arr[] =
-                         [
-                           'name' => $value->name,
-                           'details' => $value->details
-                         ];
-                   }
-                   if(!empty($arr)){
-                       \DB::table('products')->insert($arr);
-                       dd('Insert Record successfully.');
-                   }
-               }
-           }
-           dd('Request data does not have any files to import.');
-    }
-    */
     public function nursing_candidate_pin_problem()
     {
       echo "Hello World";

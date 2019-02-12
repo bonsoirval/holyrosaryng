@@ -10,11 +10,11 @@ class CreateNursingCandidateResultTable extends Migration
      * Schema table name to migrate
      * @var string
      */
-    public $set_schema_table = 'nursing_candidate_result';
+    public $set_schema_table = 'nursing_candidate_results';
 
     /**
      * Run the migrations.
-     * @table nursing_candidate_result
+     * @table nursing_candidate_results
      *
      * @return void
      */

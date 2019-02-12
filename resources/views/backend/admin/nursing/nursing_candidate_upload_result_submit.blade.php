@@ -38,7 +38,7 @@
 
   <div class="row">
       <div class="col-md-offset-2 col-md-10">
-        <a href="http://www.expertphp.in/laravel5.3/public/download-excel-file/xls">Download Result Format in Excel xls</a> |
+        <a href="{{ URL::to('admin/nursing/download_candidate_result_xls')}}">Download Result Format in Excel xls</a> |
         <a href="http://www.expertphp.in/laravel5.3/public/download-excel-file/xlsx">Download Result Format in  Excel xlsx</a>
       </div>
    </div>
